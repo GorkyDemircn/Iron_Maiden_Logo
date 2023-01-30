@@ -2,6 +2,7 @@ import turtle as tur
 def screen_adjustment():
     scr = tur.Screen()
     scr.bgcolor('black')
+    scr.bgpic('C:\\Users\\DEVELOPTICA\\Desktop\\eddie_3.gif')
     tur.title('Iron Maiden')
     tur.penup()
     tur.shape("turtle")
