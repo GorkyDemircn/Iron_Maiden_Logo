@@ -7,7 +7,7 @@ def screen_adjustment():
     tur.shape("turtle")
     tur.goto(-650, 100)
     #tur.pencolor((253,239,16,255))
-    tur.pen(pencolor='silver' ,fillcolor="black", pensize=5)
+    tur.pen(pencolor='Maroon' ,fillcolor="black", pensize=5)
     tur.pendown()  
     
 def letter_i():
@@ -52,15 +52,15 @@ def letter_r():
     
 def letter_r_inside():
     tur.penup()
-    tur.goto(-585, 55)
+    tur.goto(-585, 60)
     tur.pendown()
     tur.begin_fill()
-    tur.rt(55)
-    tur.fd(20)
-    tur.rt(75)
+    tur.rt(50.2)
     tur.fd(22)
-    tur.rt(140)
-    tur.fd(33)
+    tur.rt(75.2)
+    tur.fd(26)
+    tur.rt(144.5)
+    tur.fd(36)
     
     tur.end_fill()
     
@@ -98,7 +98,41 @@ def letter_o_inside():
     tur.fd(73)
   
     tur.end_fill()
-
+    
+def letter_n():
+    tur.penup()
+    tur.goto(-372, 98)
+    tur.pendown()
+    tur.begin_fill()
+    tur.rt(133.5)
+    tur.fd(20)
+    tur.rt(62.5)
+    tur.fd(40)
+    tur.rt(-152.5)
+    tur.fd(35)
+    tur.rt(90)
+    tur.fd(20)
+    tur.rt(89.5)
+    tur.fd(170)
+    tur.rt(145.5)
+    tur.fd(35)
+    tur.rt(35)
+    tur.fd(35)
+    tur.lt(35.5)
+    tur.fd(35)
+    tur.lt(145.5)
+    tur.fd(50)
+    tur.rt(90.5)
+    tur.fd(20)
+    tur.rt(89.8)
+    tur.fd(110)
+    tur.rt(-53.5)
+    tur.fd(32)
+    tur.rt(144.5)
+    tur.fd(25)
+    
+    tur.end_fill()
+    
      
 def call_all_functions():
     screen_adjustment()
@@ -107,6 +141,7 @@ def call_all_functions():
     letter_r_inside()
     letter_o()
     letter_o_inside()
+    letter_n()
        
 call_all_functions()
 tur.hideturtle()
