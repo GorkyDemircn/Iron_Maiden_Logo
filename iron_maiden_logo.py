@@ -2,8 +2,7 @@ import turtle as tur
 
 def call_background(scr):
     scr.bgpic('C:\\Users\\DEVELOPTICA\\Desktop\\eddie_3.gif')
-    
-
+   
 def screen_adjustment():
     scr = tur.Screen()
     scr.bgcolor('black')
@@ -11,7 +10,6 @@ def screen_adjustment():
     tur.penup()
     tur.shape("turtle")
     tur.goto(-650, 100)
-    #tur.pencolor((253,239,16,255))
     tur.pen(pencolor='White', fillcolor='Maroon' , pensize=5)
     tur.pendown()  
     
@@ -169,7 +167,6 @@ def letter_m():
     tur.fd(20)
     tur.rt(90.2)
     tur.fd(134.5)
-    
     tur.rt(-53.5)
     tur.fd(32)
     tur.rt(143.5)
@@ -177,8 +174,6 @@ def letter_m():
     
     tur.end_fill()
     
-    
-     
 def call_all_functions():
     screen_adjustment()
     letter_i()
