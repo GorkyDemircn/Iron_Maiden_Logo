@@ -1,15 +1,21 @@
 import turtle as tur
+
+def call_background(scr):
+    scr.bgpic('C:\\Users\\DEVELOPTICA\\Desktop\\eddie_3.gif')
+    
+
 def screen_adjustment():
     scr = tur.Screen()
     scr.bgcolor('black')
-    scr.bgpic('C:\\Users\\DEVELOPTICA\\Desktop\\eddie_3.gif')
     tur.title('Iron Maiden')
     tur.penup()
     tur.shape("turtle")
     tur.goto(-650, 100)
     #tur.pencolor((253,239,16,255))
-    tur.pen(pencolor='Maroon' ,fillcolor="black", pensize=5)
+    tur.pen(pencolor='White', fillcolor='Maroon' , pensize=5)
     tur.pendown()  
+    
+    return scr
     
 def letter_i():
     tur.begin_fill()
@@ -134,6 +140,44 @@ def letter_n():
     
     tur.end_fill()
     
+def letter_m():
+    tur.penup()
+    tur.goto(330, 98)
+    tur.pendown()
+    tur.begin_fill()
+    tur.rt(0)
+    tur.fd(20)
+    tur.rt(62.5)
+    tur.fd(25)
+    tur.rt(-120.5)
+    tur.fd(25.5)
+    tur.rt(98.5)
+    tur.fd(20)
+    tur.rt(48.5)
+    tur.fd(170)
+    tur.rt(145.5)
+    tur.fd(35)
+    tur.rt(34.5)
+    tur.fd(70)
+    tur.rt(-145.5)
+    tur.fd(25.5)
+    tur.rt(120.5)
+    tur.fd(25.5)
+    tur.rt(-154.5)
+    tur.fd(70)
+    tur.rt(89.5)
+    tur.fd(20)
+    tur.rt(90.2)
+    tur.fd(134.5)
+    
+    tur.rt(-53.5)
+    tur.fd(32)
+    tur.rt(143.5)
+    tur.fd(28)
+    
+    tur.end_fill()
+    
+    
      
 def call_all_functions():
     screen_adjustment()
@@ -143,6 +187,8 @@ def call_all_functions():
     letter_o()
     letter_o_inside()
     letter_n()
+    call_background(screen_adjustment())
+    letter_m()
        
 call_all_functions()
 tur.hideturtle()
