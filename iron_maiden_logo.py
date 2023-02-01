@@ -2,7 +2,7 @@ import turtle as tur
 
 def call_background(scr):
     scr.bgpic('C:\\Users\\DEVELOPTICA\\Desktop\\eddie_3.gif')
-   
+    
 def screen_adjustment():
     scr = tur.Screen()
     scr.bgcolor('black')
@@ -10,6 +10,7 @@ def screen_adjustment():
     tur.penup()
     tur.shape("turtle")
     tur.goto(-650, 100)
+    #tur.pencolor((253,239,16,255))
     tur.pen(pencolor='White', fillcolor='Maroon' , pensize=5)
     tur.pendown()  
     
@@ -174,6 +175,67 @@ def letter_m():
     
     tur.end_fill()
     
+def letter_a():
+    tur.penup()
+    tur.goto(425, 82)
+    tur.pendown()
+    tur.begin_fill()
+    tur.rt(30)
+    tur.fd(20)
+    tur.rt(-90)
+    tur.fd(30)
+    tur.lt(-60.5)
+    tur.fd(25)
+    tur.rt(89.5)
+    tur.fd(120)
+    tur.lt(-90.5)
+    tur.fd(25)
+    tur.lt(-65.5)
+    tur.fd(35)
+    tur.rt(-130.5)
+    tur.fd(35)
+    tur.rt(120)
+    tur.fd(20)
+    tur.rt(58.5)
+    tur.fd(25)
+    tur.lt(75.5)
+    tur.fd(25)
+    tur.rt(71.8)
+    tur.fd(48.5)
+    
+    
+    tur.end_fill()
+    
+def letter_a_inside():
+    tur.penup()
+    tur.goto(465, 60)
+    tur.pendown()
+    tur.begin_fill()
+    tur.rt(160.2)
+    tur.fd(36)
+    tur.rt(140.5)
+    tur.fd(23)
+    tur.rt(73.5)
+    tur.fd(22)
+    
+    tur.end_fill()
+    
+def letter_i_right():
+    tur.penup()
+    tur.goto(505, 98)
+    tur.pendown()
+    tur.begin_fill()
+    tur.rt(55.5)
+    tur.fd(20)
+    tur.rt(90)
+    tur.fd(150)
+    tur.lt(-90)
+    tur.fd(20)
+    tur.rt(90)
+    tur.fd(150)
+    
+    tur.end_fill()
+     
 def call_all_functions():
     screen_adjustment()
     letter_i()
@@ -184,7 +246,12 @@ def call_all_functions():
     letter_n()
     call_background(screen_adjustment())
     letter_m()
-       
+    letter_a()
+    letter_a_inside()  
+    letter_i_right()
+    
+    tur.end_fill()
+        
 call_all_functions()
 tur.hideturtle()
 tur.exitonclick()
