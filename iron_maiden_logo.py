@@ -7,6 +7,7 @@ def screen_adjustment():
     scr = tur.Screen()
     scr.bgcolor('black')
     tur.title('Iron Maiden')
+    tur.speed(6)
     tur.penup()
     tur.shape("turtle")
     tur.goto(-650, 100)
@@ -222,7 +223,7 @@ def letter_a_inside():
     
 def letter_i_right():
     tur.penup()
-    tur.goto(505, 98)
+    tur.goto(495, 98)
     tur.pendown()
     tur.begin_fill()
     tur.rt(55.5)
@@ -235,7 +236,85 @@ def letter_i_right():
     tur.fd(150)
     
     tur.end_fill()
-     
+    
+def letter_d():
+    tur.penup()
+    tur.goto(530, 98)
+    tur.pendown()
+    tur.begin_fill()
+    tur.rt(90)
+    tur.fd(20)
+    tur.rt(44.8)
+    tur.fd(101)
+    tur.rt(78.5) #78.5
+    tur.fd(95)
+    tur.rt(56.4)
+    tur.fd(40)
+    tur.rt(90)
+    tur.fd(150)
+    
+    tur.end_fill()
+    
+def letter_d_inside():
+    tur.penup()
+    tur.goto(545, 56.2)
+    tur.pendown()
+    tur.begin_fill()
+    tur.rt(180)
+    tur.fd(70)
+    tur.lt(125)
+    tur.fd(70)
+    tur.rt(-115.5)
+    tur.fd(66)
+    tur.setheading(0)
+    tur.heading()
+    
+    tur.end_fill()
+    
+def letter_e():
+    tur.penup()
+    tur.goto(655, 98)
+    tur.pendown()
+    tur.begin_fill()
+    tur.fd(40)
+    tur.rt(90)
+    
+    tur.fd(30)
+    tur.rt(90)
+    
+    tur.fd(30)
+    
+    tur.lt(90)
+    tur.fd(30)
+    tur.lt(90)
+    tur.fd(30)
+    tur.rt(90)
+    tur.fd(30)
+    tur.rt(90)
+    
+    tur.fd(30)
+    
+    tur.lt(90)
+    
+    tur.fd(35)
+    
+    tur.lt(90)
+    tur.fd(30)
+    tur.rt(90)
+    tur.fd(30)
+    tur.rt(90)
+    tur.fd(30)
+    tur.rt(45.5)
+    tur.fd(45)
+    tur.setheading(90)
+    tur.heading()
+    tur.fd(123)
+    tur.setheading(0)
+    tur.heading()
+    tur.fd(20)
+    
+    tur.end_fill()
+    
 def call_all_functions():
     screen_adjustment()
     letter_i()
@@ -249,9 +328,10 @@ def call_all_functions():
     letter_a()
     letter_a_inside()  
     letter_i_right()
-    
-    tur.end_fill()
-        
+    letter_d()
+    letter_d_inside()
+    letter_e()
+            
 call_all_functions()
 tur.hideturtle()
 tur.exitonclick()
