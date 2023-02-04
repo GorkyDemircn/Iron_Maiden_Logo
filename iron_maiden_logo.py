@@ -11,10 +11,20 @@ def screen_adjustment():
     tur.penup()
     tur.shape("turtle")
     tur.goto(-650, 100)
-    #tur.pencolor((253,239,16,255))
-    tur.pen(pencolor='White', fillcolor='Maroon' , pensize=5)
-    tur.pendown()  
+    tur.pen(pencolor='Gold', fillcolor='' , pensize=4)
     
+    #Displaying the screen at the front.
+    rootwindow = scr.getcanvas().winfo_toplevel()
+    rootwindow.call('wm', 'attributes', '.', '-topmost', '1')
+    rootwindow.call('wm', 'attributes', '.', '-topmost', '0')
+    #Displaying the screen at the front.
+    
+    #To make the screen fullscreen.
+    screenTk = scr.getcanvas().winfo_toplevel()
+    screenTk.attributes("-fullscreen", True)
+    #To make the screen fullscreen.
+    
+    tur.pendown()  
     return scr
     
 def letter_i():
@@ -54,7 +64,7 @@ def letter_r():
     tur.rt(90)
     tur.fd(20)
     tur.rt(90)
-    tur.fd(145)
+    tur.fd(145.6)
     tur.end_fill()
     
 def letter_r_inside():
@@ -136,7 +146,7 @@ def letter_n():
     tur.rt(-53.5)
     tur.fd(32)
     tur.rt(144.5)
-    tur.fd(25)
+    tur.fd(30)
     
     tur.end_fill()
     
@@ -172,7 +182,7 @@ def letter_m():
     tur.rt(-53.5)
     tur.fd(32)
     tur.rt(143.5)
-    tur.fd(28)
+    tur.fd(35)
     
     tur.end_fill()
     
@@ -239,81 +249,121 @@ def letter_i_right():
     
 def letter_d():
     tur.penup()
-    tur.goto(530, 98)
+    tur.goto(540, 98)
     tur.pendown()
     tur.begin_fill()
     tur.rt(90)
     tur.fd(20)
-    tur.rt(44.8)
-    tur.fd(101)
-    tur.rt(78.5) #78.5
-    tur.fd(95)
-    tur.rt(56.4)
-    tur.fd(40)
+    tur.rt(65.5)
+    tur.fd(120)
+    tur.rt(80.4) #78.5
+    tur.fd(70)
+    tur.setheading(180)
+    tur.heading()
+    tur.fd(20)
     tur.rt(90)
-    tur.fd(150)
+    tur.fd(148)
+    tur.setheading(0)
+    tur.heading()
+    tur.fd(10)
+    tur.end_fill()
+    tur.setheading(-90)
+    tur.heading()
     
     tur.end_fill()
     
 def letter_d_inside():
     tur.penup()
-    tur.goto(545, 56.2)
+    tur.goto(542, 85)
     tur.pendown()
     tur.begin_fill()
-    tur.rt(180)
-    tur.fd(70)
-    tur.lt(125)
-    tur.fd(70)
-    tur.rt(-115.5)
-    tur.fd(66)
+    tur.fd(120)
+    tur.lt(90)
+    tur.fd(10)
+    tur.lt(35.5)
+    tur.fd(50)
+    tur.rt(-78.5)
+    tur.fd(100)
+    tur.setheading(180)
+    tur.heading()
+    tur.fd(8)
+    tur.end_fill()
     tur.setheading(0)
     tur.heading()
     
-    tur.end_fill()
-    
 def letter_e():
     tur.penup()
-    tur.goto(655, 98)
+    tur.goto(650, 98)
     tur.pendown()
     tur.begin_fill()
     tur.fd(40)
     tur.rt(90)
-    
-    tur.fd(30)
+    tur.fd(20)
     tur.rt(90)
-    
-    tur.fd(30)
-    
+    tur.fd(40)
     tur.lt(90)
-    tur.fd(30)
+    tur.fd(40)
     tur.lt(90)
-    tur.fd(30)
+    tur.fd(40)
     tur.rt(90)
-    tur.fd(30)
+    tur.fd(20)
     tur.rt(90)
-    
-    tur.fd(30)
-    
+    tur.fd(40)
     tur.lt(90)
-    
-    tur.fd(35)
-    
+    tur.fd(50)
     tur.lt(90)
-    tur.fd(30)
+    tur.fd(40)
     tur.rt(90)
-    tur.fd(30)
+    tur.fd(20)
     tur.rt(90)
-    tur.fd(30)
-    tur.rt(45.5)
-    tur.fd(45)
+    tur.fd(40)
+    tur.rt(45.8)
+    tur.fd(32)
     tur.setheading(90)
     tur.heading()
-    tur.fd(123)
+    tur.fd(127)
     tur.setheading(0)
     tur.heading()
+    tur.fd(30)
+    tur.end_fill()
+    tur.setheading(0)
+    tur.heading()
+    
+def letter_n_right():
+    tur.penup()
+    tur.goto(735, 98)
+    tur.pendown()
+    tur.begin_fill()
+    
     tur.fd(20)
+    tur.rt(60.5)
+    tur.fd(40)
+    tur.rt(-150.5)
+    tur.fd(35)
+    tur.rt(90)
+    tur.fd(20)
+    tur.rt(89.9)
+    tur.fd(170)
+    tur.rt(145.5)
+    tur.fd(35)
+    tur.rt(34.5)
+    tur.fd(35)
+    tur.lt(35)
+    tur.fd(35)
+    tur.lt(144.5)
+    tur.fd(50)
+    tur.rt(90.5)
+    tur.fd(20)
+    tur.rt(89.5)
+    tur.fd(109)
+    tur.rt(-53.5)
+    tur.fd(30.9)
+    tur.rt(144.5)
+    tur.fd(26)
     
     tur.end_fill()
+    tur.setheading(0)
+    tur.heading()
     
 def call_all_functions():
     screen_adjustment()
@@ -331,6 +381,7 @@ def call_all_functions():
     letter_d()
     letter_d_inside()
     letter_e()
+    letter_n_right()
             
 call_all_functions()
 tur.hideturtle()
