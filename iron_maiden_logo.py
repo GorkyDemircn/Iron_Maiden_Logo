@@ -1,7 +1,7 @@
 import turtle as tur
 
 def call_background(scr):
-    scr.bgpic('C:\\Users\\DEVELOPTICA\\Desktop\\eddie_3.gif')
+    scr.bgpic('Add the path of the image:')
     
 def screen_adjustment():
     scr = tur.Screen()
